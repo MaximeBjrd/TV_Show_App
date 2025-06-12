@@ -5,7 +5,10 @@ export const CONSTANTS = {
 
     BASE_URL: "https://api.themoviedb.org/3",
     SHOW_ID: (id) => `${id}`,
-    SHOW_QUERY: (query) => `${encodeURIComponent(query)}`
+    SHOW_QUERY: (query) => `${encodeURIComponent(query)}`,
+
+    BASE_URL_IMG_BIG: "https://image.tmdb.org/t/p/original",
+    BASE_URL_IMG_SMALL: "https://image.tmdb.org/t/p/w300"
 }
 
 CONSTANTS.SHOW_BY_TITLE = (query) => `${CONSTANTS.BASE_URL}/search/tv?api_key=${CONSTANTS.API_KEY}&query=${CONSTANTS.SHOW_QUERY(query)}`

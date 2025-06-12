@@ -11,3 +11,15 @@ export async function getPopularShow() {
     return null;
   }
 }
+
+export async function getRecoShows(showId) {
+  try {
+    const res = await fetch(CONSTANTS.RECO(showId));
+    const data = await res.json();
+    return data;
+  } 
+  catch (error) {
+    console.error(error);
+    return null;
+  }
+}
