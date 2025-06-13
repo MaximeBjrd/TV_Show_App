@@ -2,7 +2,7 @@ import './App.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router'
 import { AppLayout } from './layout/app-layout'
-import { HomePage } from './pages/Home/home'
+import { HomePage } from './pages/Home/Home'
 import { DetailPage } from './pages/Detail/Detail'
 import { NotFoundPage } from './pages/NotFound/NotFound'
 import { ROUTES } from './config/routes'
